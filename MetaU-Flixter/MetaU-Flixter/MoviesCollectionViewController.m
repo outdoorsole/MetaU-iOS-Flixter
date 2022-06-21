@@ -8,6 +8,7 @@
 #import "MoviesCollectionViewController.h"
 #import "MovieCollectionViewCell.h"
 #import <UIImageView+AFNetworking.h>
+#import "DetailsViewController.h"
 
 @interface MoviesCollectionViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -92,6 +93,13 @@
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
     return 10;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:sender];
+    NSDictionary *movie = self.movies[indexPath.row];
+    DetailsViewController *detailsVC = [segue destinationViewController];
+    detailsVC.movie = movie;
 }
 
 @end
