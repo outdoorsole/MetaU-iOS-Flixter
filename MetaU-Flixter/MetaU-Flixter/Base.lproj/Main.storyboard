@@ -153,6 +153,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ATa-de-bjI"/>
+                    <connections>
+                        <outlet property="backdropImageView" destination="6Nr-EB-nQO" id="z3x-g0-ys9"/>
+                        <outlet property="posterImageView" destination="Ver-Y2-QIW" id="7uX-NS-7Nd"/>
+                        <outlet property="synopsisLabel" destination="s5p-uc-5ec" id="oxA-Vq-kLP"/>
+                        <outlet property="titleLabel" destination="EK8-Hi-rZV" id="vJr-l0-IgV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7SG-0q-fBT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
