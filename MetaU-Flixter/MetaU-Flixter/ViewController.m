@@ -9,6 +9,8 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) NSArray *movies;
+
 @end
 
 @implementation ViewController
@@ -29,7 +31,11 @@
                NSLog(@"%@", dataDictionary);// log an object with the %@ formatter.
 
                // TODO: Get the array of movies
+               NSArray *myArray = dataDictionary[@"results"];
+
                // TODO: Store the movies in a property to use elsewhere
+               self.movies = myArray;
+
                // TODO: Reload your table view data
            }
        }];
