@@ -176,7 +176,7 @@
             </objects>
             <point key="canvasLocation" x="958" y="1191"/>
         </scene>
-        <!--Movies Collection View Controller-->
+        <!--Movies-->
         <scene sceneID="H0K-q5-N0Y">
             <objects>
                 <viewController id="R3K-TA-Now" customClass="MoviesCollectionViewController" sceneMemberID="viewController">
@@ -229,7 +229,7 @@
                             <constraint firstAttribute="trailing" secondItem="3me-qH-hf5" secondAttribute="trailing" id="WSM-IK-qf8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="y9n-0x-OIB"/>
+                    <navigationItem key="navigationItem" title="Movies" id="y9n-0x-OIB"/>
                     <connections>
                         <outlet property="collectionView" destination="3me-qH-hf5" id="SoC-Fk-noD"/>
                         <outlet property="collectionViewFlowLayout" destination="i2C-Hc-ktC" id="bbX-8S-jhG"/>
@@ -261,7 +261,7 @@
         <scene sceneID="SV3-mV-Obn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5QX-BU-7S0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Now Playing" id="foj-bx-k3V"/>
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="now_playing_tabbar_item" selectedImage="now_playing_tabbar_item" id="foj-bx-k3V"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="x8d-ic-ccy">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -280,7 +280,7 @@
         <scene sceneID="gpb-ku-VaE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zie-2o-v4p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Movies" id="bYT-U0-Uk6"/>
+                    <tabBarItem key="tabBarItem" title="Movies" image="reel_tabbar_icon" selectedImage="reel_tabbar_icon" id="bYT-U0-Uk6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qhp-XP-91x">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -300,6 +300,8 @@
         <segue reference="yn9-Jl-nM6"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="now_playing_tabbar_item" width="21" height="21"/>
+        <image name="reel_tabbar_icon" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
