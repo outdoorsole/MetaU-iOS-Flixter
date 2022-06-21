@@ -11,6 +11,8 @@
 
 @property (strong, nonatomic) NSArray *movies;
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end
 
 @implementation ViewController
@@ -37,6 +39,7 @@
                self.movies = myArray;
 
                // TODO: Reload your table view data
+               [self.tableView reloadData];
            }
        }];
     [task resume];
