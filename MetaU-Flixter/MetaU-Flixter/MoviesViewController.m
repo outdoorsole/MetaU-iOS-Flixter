@@ -7,6 +7,7 @@
 
 #import "MoviesViewController.h"
 #import "MovieCell.h"
+#import "DetailsViewController.h"
 
 @interface MoviesViewController () <UITableViewDataSource>
 
@@ -59,6 +60,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.movies count];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+    NSDictionary *movie = self.movies[indexPath.row];
+    DetailsViewController *detailsVC = [segue destinationViewController];
+    detailsVC.movie = movie;
 }
 
 @end
