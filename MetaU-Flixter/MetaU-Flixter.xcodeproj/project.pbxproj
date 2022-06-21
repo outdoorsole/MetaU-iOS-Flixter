@@ -15,6 +15,7 @@
 		0C066B8C2861DA8D0078C646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C066B8A2861DA8D0078C646 /* LaunchScreen.storyboard */; };
 		0C066B8F2861DA8D0078C646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C066B8E2861DA8D0078C646 /* main.m */; };
 		0C066B972861DE500078C646 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C066B962861DE500078C646 /* MovieCell.m */; };
+		0C066B9A2861E0660078C646 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C066B992861E0660078C646 /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		0C066B8E2861DA8D0078C646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C066B952861DE500078C646 /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
 		0C066B962861DE500078C646 /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		0C066B982861E0660078C646 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		0C066B992861E0660078C646 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +73,15 @@
 				0C066B802861DA8A0078C646 /* SceneDelegate.m */,
 				0C066B822861DA8A0078C646 /* ViewController.h */,
 				0C066B832861DA8A0078C646 /* ViewController.m */,
+				0C066B952861DE500078C646 /* MovieCell.h */,
+				0C066B962861DE500078C646 /* MovieCell.m */,
+				0C066B982861E0660078C646 /* DetailsViewController.h */,
+				0C066B992861E0660078C646 /* DetailsViewController.m */,
 				0C066B852861DA8A0078C646 /* Main.storyboard */,
 				0C066B882861DA8D0078C646 /* Assets.xcassets */,
 				0C066B8A2861DA8D0078C646 /* LaunchScreen.storyboard */,
 				0C066B8D2861DA8D0078C646 /* Info.plist */,
 				0C066B8E2861DA8D0078C646 /* main.m */,
-				0C066B952861DE500078C646 /* MovieCell.h */,
-				0C066B962861DE500078C646 /* MovieCell.m */,
 			);
 			path = "MetaU-Flixter";
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				0C066B842861DA8A0078C646 /* ViewController.m in Sources */,
 				0C066B972861DE500078C646 /* MovieCell.m in Sources */,
 				0C066B7E2861DA8A0078C646 /* AppDelegate.m in Sources */,
+				0C066B9A2861E0660078C646 /* DetailsViewController.m in Sources */,
 				0C066B8F2861DA8D0078C646 /* main.m in Sources */,
 				0C066B812861DA8A0078C646 /* SceneDelegate.m in Sources */,
 			);
