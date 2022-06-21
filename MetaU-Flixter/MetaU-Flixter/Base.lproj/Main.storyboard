@@ -231,6 +231,7 @@
                     <tabBarItem key="tabBarItem" title="Movies" id="bYT-U0-Uk6"/>
                     <connections>
                         <outlet property="collectionView" destination="3me-qH-hf5" id="SoC-Fk-noD"/>
+                        <outlet property="collectionViewFlowLayout" destination="i2C-Hc-ktC" id="bbX-8S-jhG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fc-hY-3JF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

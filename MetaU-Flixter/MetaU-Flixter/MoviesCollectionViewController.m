@@ -12,6 +12,7 @@
 @interface MoviesCollectionViewController () <UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *collectionViewFlowLayout;
 @property (strong, nonatomic) NSArray *movies;
 
 @end
@@ -45,6 +46,15 @@
            }
        }];
     [task resume];
+}
+
+- (void)viewDidLayoutSubviews {
+   [super viewDidLayoutSubviews];
+
+    self.collectionViewFlowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    self.collectionViewFlowLayout.minimumLineSpacing = 0;
+    self.collectionViewFlowLayout.minimumInteritemSpacing = 0;
+    self.collectionViewFlowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
