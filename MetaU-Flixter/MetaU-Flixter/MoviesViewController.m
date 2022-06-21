@@ -1,14 +1,14 @@
 //
-//  ViewController.m
+//  MoviesViewController.m
 //  MetaU-Flixter
 //
 //  Created by m on 6/21/22.
 //
 
-#import "ViewController.h"
+#import "MoviesViewController.h"
 #import "MovieCell.h"
 
-@interface ViewController () <UITableViewDataSource>
+@interface MoviesViewController () <UITableViewDataSource>
 
 @property (strong, nonatomic) NSArray *movies;
 
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation ViewController
+@implementation MoviesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
