@@ -100,7 +100,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNn-AB-AZ2" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="407"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Nr-EB-nQO">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="295.5"/>
@@ -132,9 +132,8 @@
                                             <constraint firstItem="EK8-Hi-rZV" firstAttribute="leading" secondItem="Ver-Y2-QIW" secondAttribute="trailing" constant="11" id="Ny3-FZ-sKq"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EK8-Hi-rZV" secondAttribute="trailing" constant="8" id="VPz-wV-7EP"/>
                                             <constraint firstAttribute="trailing" secondItem="s5p-uc-5ec" secondAttribute="trailing" constant="8" id="XFM-9S-BLj"/>
-                                            <constraint firstAttribute="height" constant="1000" id="Yjx-hl-FYs"/>
                                             <constraint firstItem="6Nr-EB-nQO" firstAttribute="top" secondItem="PNn-AB-AZ2" secondAttribute="top" id="Z49-Iv-3YI"/>
-                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="s5p-uc-5ec" secondAttribute="bottom" constant="8" id="a9B-D3-LvQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="s5p-uc-5ec" secondAttribute="bottom" constant="8" id="a9B-D3-LvQ"/>
                                             <constraint firstItem="Ver-Y2-QIW" firstAttribute="leading" secondItem="PNn-AB-AZ2" secondAttribute="leading" constant="16" id="e86-Bt-82K"/>
                                             <constraint firstAttribute="trailing" secondItem="6Nr-EB-nQO" secondAttribute="trailing" id="hse-pb-bii"/>
                                             <constraint firstItem="Ver-Y2-QIW" firstAttribute="centerY" secondItem="6Nr-EB-nQO" secondAttribute="bottom" id="kly-GM-d3n"/>
