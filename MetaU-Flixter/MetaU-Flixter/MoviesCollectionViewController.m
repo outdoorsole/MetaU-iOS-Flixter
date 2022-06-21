@@ -55,7 +55,7 @@
     self.collectionViewFlowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     self.collectionViewFlowLayout.minimumLineSpacing = 0;
     self.collectionViewFlowLayout.minimumInteritemSpacing = 0;
-    self.collectionViewFlowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.collectionViewFlowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -80,8 +80,18 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     int totalwidth = self.collectionView.bounds.size.width;
     int numberOfCellsPerRow = 3;
-    int dimensions = (CGFloat)(totalwidth / numberOfCellsPerRow);
-    return CGSizeMake(dimensions, dimensions);
+    int minimumInterimSpacing = 10;
+    int totalInterimSpacing = (numberOfCellsPerRow - 1) * minimumInterimSpacing;
+    int dimensions = (CGFloat)((totalwidth / numberOfCellsPerRow) - totalInterimSpacing);
+    return CGSizeMake(dimensions, dimensions * 1.5);
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+    return 10;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    return 10;
 }
 
 @end
