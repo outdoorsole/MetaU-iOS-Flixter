@@ -1,0 +1,6 @@
+framework module Pods_MetaU_Flixter {
+  umbrella header "Pods-MetaU-Flixter-umbrella.h"
+
+  export *
+  module * { export * }
+}

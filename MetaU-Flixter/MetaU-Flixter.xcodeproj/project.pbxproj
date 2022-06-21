@@ -16,6 +16,7 @@
 		0C066B8F2861DA8D0078C646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C066B8E2861DA8D0078C646 /* main.m */; };
 		0C066B972861DE500078C646 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C066B962861DE500078C646 /* MovieCell.m */; };
 		0C066B9A2861E0660078C646 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C066B992861E0660078C646 /* DetailsViewController.m */; };
+		CEE30704630650C8FA3F1386 /* Pods_MetaU_Flixter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C9AFAE2A1093BA55722E8C /* Pods_MetaU_Flixter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,9 @@
 		0C066B962861DE500078C646 /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		0C066B982861E0660078C646 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		0C066B992861E0660078C646 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		A4485360DC645DDEED8163DF /* Pods-MetaU-Flixter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaU-Flixter.release.xcconfig"; path = "Target Support Files/Pods-MetaU-Flixter/Pods-MetaU-Flixter.release.xcconfig"; sourceTree = "<group>"; };
+		D4C9AFAE2A1093BA55722E8C /* Pods_MetaU_Flixter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetaU_Flixter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23997D92C6268CCF1FF6A80 /* Pods-MetaU-Flixter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaU-Flixter.debug.xcconfig"; path = "Target Support Files/Pods-MetaU-Flixter/Pods-MetaU-Flixter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE30704630650C8FA3F1386 /* Pods_MetaU_Flixter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +58,8 @@
 			children = (
 				0C066B7B2861DA8A0078C646 /* MetaU-Flixter */,
 				0C066B7A2861DA8A0078C646 /* Products */,
+				4C85F74FDD9CF5B2380BC34E /* Pods */,
+				367602A2401F89BEB95C863E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +93,24 @@
 			path = "MetaU-Flixter";
 			sourceTree = "<group>";
 		};
+		367602A2401F89BEB95C863E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4C9AFAE2A1093BA55722E8C /* Pods_MetaU_Flixter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C85F74FDD9CF5B2380BC34E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F23997D92C6268CCF1FF6A80 /* Pods-MetaU-Flixter.debug.xcconfig */,
+				A4485360DC645DDEED8163DF /* Pods-MetaU-Flixter.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C066B922861DA8D0078C646 /* Build configuration list for PBXNativeTarget "MetaU-Flixter" */;
 			buildPhases = (
+				72CDDB5305176084B84547B8 /* [CP] Check Pods Manifest.lock */,
 				0C066B752861DA8A0078C646 /* Sources */,
 				0C066B762861DA8A0078C646 /* Frameworks */,
 				0C066B772861DA8A0078C646 /* Resources */,
+				75F515A35C13D8F5AC1CFD03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +177,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72CDDB5305176084B84547B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetaU-Flixter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75F515A35C13D8F5AC1CFD03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetaU-Flixter/Pods-MetaU-Flixter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetaU-Flixter/Pods-MetaU-Flixter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetaU-Flixter/Pods-MetaU-Flixter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C066B752861DA8A0078C646 /* Sources */ = {
@@ -299,6 +368,7 @@
 		};
 		0C066B932861DA8D0078C646 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F23997D92C6268CCF1FF6A80 /* Pods-MetaU-Flixter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +396,7 @@
 		};
 		0C066B942861DA8D0078C646 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4485360DC645DDEED8163DF /* Pods-MetaU-Flixter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
