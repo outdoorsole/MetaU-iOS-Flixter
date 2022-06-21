@@ -16,6 +16,8 @@
 		0C066B8F2861DA8D0078C646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C066B8E2861DA8D0078C646 /* main.m */; };
 		0C066B972861DE500078C646 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C066B962861DE500078C646 /* MovieCell.m */; };
 		0C066B9A2861E0660078C646 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C066B992861E0660078C646 /* DetailsViewController.m */; };
+		0C066B9D2861F6970078C646 /* MoviesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C066B9C2861F6970078C646 /* MoviesCollectionViewController.m */; };
+		0C066BA02861F6DC0078C646 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C066B9F2861F6DC0078C646 /* MovieCollectionViewCell.m */; };
 		CEE30704630650C8FA3F1386 /* Pods_MetaU_Flixter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C9AFAE2A1093BA55722E8C /* Pods_MetaU_Flixter.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,10 @@
 		0C066B962861DE500078C646 /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		0C066B982861E0660078C646 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		0C066B992861E0660078C646 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		0C066B9B2861F6970078C646 /* MoviesCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesCollectionViewController.h; sourceTree = "<group>"; };
+		0C066B9C2861F6970078C646 /* MoviesCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesCollectionViewController.m; sourceTree = "<group>"; };
+		0C066B9E2861F6DC0078C646 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
+		0C066B9F2861F6DC0078C646 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
 		A4485360DC645DDEED8163DF /* Pods-MetaU-Flixter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaU-Flixter.release.xcconfig"; path = "Target Support Files/Pods-MetaU-Flixter/Pods-MetaU-Flixter.release.xcconfig"; sourceTree = "<group>"; };
 		D4C9AFAE2A1093BA55722E8C /* Pods_MetaU_Flixter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetaU_Flixter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23997D92C6268CCF1FF6A80 /* Pods-MetaU-Flixter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaU-Flixter.debug.xcconfig"; path = "Target Support Files/Pods-MetaU-Flixter/Pods-MetaU-Flixter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +95,10 @@
 				0C066B8A2861DA8D0078C646 /* LaunchScreen.storyboard */,
 				0C066B8D2861DA8D0078C646 /* Info.plist */,
 				0C066B8E2861DA8D0078C646 /* main.m */,
+				0C066B9B2861F6970078C646 /* MoviesCollectionViewController.h */,
+				0C066B9C2861F6970078C646 /* MoviesCollectionViewController.m */,
+				0C066B9E2861F6DC0078C646 /* MovieCollectionViewCell.h */,
+				0C066B9F2861F6DC0078C646 /* MovieCollectionViewCell.m */,
 			);
 			path = "MetaU-Flixter";
 			sourceTree = "<group>";
@@ -107,7 +117,6 @@
 				F23997D92C6268CCF1FF6A80 /* Pods-MetaU-Flixter.debug.xcconfig */,
 				A4485360DC645DDEED8163DF /* Pods-MetaU-Flixter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,7 +237,9 @@
 				0C066B842861DA8A0078C646 /* MoviesViewController.m in Sources */,
 				0C066B972861DE500078C646 /* MovieCell.m in Sources */,
 				0C066B7E2861DA8A0078C646 /* AppDelegate.m in Sources */,
+				0C066BA02861F6DC0078C646 /* MovieCollectionViewCell.m in Sources */,
 				0C066B9A2861E0660078C646 /* DetailsViewController.m in Sources */,
+				0C066B9D2861F6970078C646 /* MoviesCollectionViewController.m in Sources */,
 				0C066B8F2861DA8D0078C646 /* main.m in Sources */,
 				0C066B812861DA8A0078C646 /* SceneDelegate.m in Sources */,
 			);
