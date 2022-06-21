@@ -10,7 +10,7 @@
 #import "DetailsViewController.h"
 #import <UIImageView+AFNetworking.h>
 
-@interface MoviesViewController () <UITableViewDataSource>
+@interface MoviesViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray *movies;
 
@@ -24,6 +24,7 @@
     [super viewDidLoad];
 
     self.tableView.dataSource = self;
+    self.tableView.delegate = self;
 
     NSURL *url = [NSURL URLWithString:@"https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
@@ -67,6 +68,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.movies count];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
